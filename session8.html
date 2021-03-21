@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Classes and ID's</title>
+
+    <style>
+        body {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            text-align: center;
+            background-color: lightblue;
+        }
+
+        h1 {
+            color: darkblue;
+            background-color: lightcyan
+        }
+
+        marquee {
+            font-size: 24px;
+            background-color: yellow;
+            font-weight: bold;
+            margin-bottom: 20px;
+            padding: 5px;
+        }
+
+        img {
+            width: 200px;
+            height: 250px;
+        }
+
+        .first {
+            background-color: white
+        }
+
+        .middle {
+            background-color: white;
+        }
+
+        th {
+            font-size: 24px;
+            border: 10px inset yellow;
+            background-color: yellowgreen;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            border: 10px inset blue;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Cell IT</h1>
+    </header>
+    <marquee behavior="" direction="">10% Off On Direct Payment!</marquee>
+    <table>
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Description</th>
+                <th>Price</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="first">
+                    <img src="12 mini.jpeg" alt="">
+                </td>
+                <td>
+                    IPhone 12 Mini
+                </td>
+                <td>
+                    $699
+                </td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <img class="middle" src="12.png" alt="">
+                </td>
+                <td>
+                    iPhone 12
+                </td>
+                <td>
+                    $799
+                </td>
+            </tr>
+            <tr>
+                <td class="first">
+                    <img src="12pro.jpeg" alt="">
+                </td>
+                <td>
+                    iPhone 12 Pro
+                </td>
+                <td>
+                    $999
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
