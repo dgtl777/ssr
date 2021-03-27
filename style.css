@@ -1,0 +1,38 @@
+body{
+    text-align: center;
+    background-color: bisque
+}
+.one{
+    padding: 20px;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+}
+.two{
+    background-color: blue;
+    padding: 30px;
+    width: 90px;
+    height: 90px;
+}
+.three{
+    background-color: coral;
+    padding: 30px;
+    width: 150px;
+    height: 150px;
+}
+.four{
+    background-color: cyan;
+    padding: 30px;
+    width: 210px;
+    height: 210px;
+}
+.five{
+    background-color: darkblue;
+    padding: 30px;
+    width: 270px;
+    height: 270px;
+    margin: auto;
+}
+.one,.two,.three,.four,.five{
+    border-radius: 50%;
+}
