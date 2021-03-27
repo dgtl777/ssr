@@ -3,34 +3,34 @@ body{
     background-color: bisque
 }
 .one{
-    padding: 20px;
     background-color: red;
-    width: 50px;
-    height: 50px;
+    width: 100%;
+    height: 100%;
 }
 .two{
     background-color: blue;
-    padding: 30px;
-    width: 90px;
-    height: 90px;
+    padding: 10%;
+    width: 40vh;
+    height: 40vh;
 }
 .three{
     background-color: coral;
-    padding: 30px;
-    width: 150px;
-    height: 150px;
+    padding: 10%;
+    width: 50vh;
+    height: 50vh;
+    margin: auto;
 }
 .four{
     background-color: cyan;
-    padding: 30px;
-    width: 210px;
-    height: 210px;
+    padding: 10%;
+    width: 65vh;
+    height:65vh;
 }
 .five{
     background-color: darkblue;
-    padding: 30px;
-    width: 270px;
-    height: 270px;
+    padding: 10%;
+    width: 80vh;
+    height:80vh;
     margin: auto;
 }
 .one,.two,.three,.four,.five{
