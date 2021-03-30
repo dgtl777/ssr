@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        body {
+            background-color: blanchedalmond;
+            text-align: center;
+        }
+
+        form {
+            width: 60vw;
+            background-color: burlywood;
+            margin: auto;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Form</h1>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>School Form</legend>
+            <label for="firstName">First Name: </label>
+            <input type="text" placeholder="Jay" required><br><br>
+            <label for="middleName">Middle Name: </label>
+            <input type="text" placeholder="Krishna"><br><br>
+            <label for="lastName">Last Name: </label>
+            <input type="text" required><br><br>
+            <label for="email">Email: </label>
+            <input type="email" required><br><br>
+            <label for="password">Password: </label>
+            <input type="password" required><br><br>
+            <label for="address">Address: </label>
+            <textarea name="" id="" cols="30" rows="3" required></textarea><br><br>
+            <label for="gender">Gender: </label>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" required>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" required><br><br>
+            <label for="subject">Select your favourite subjects:</label><br><br>
+            <label for="english">English:</label>
+            <input type="checkbox">
+            <label for="maths">Maths:</label>
+            <input type="checkbox">
+            <label for="science">Science:</label>
+            <input type="checkbox">
+            <label for="art">Art:</label>
+            <input type="checkbox">
+            <label for="computer">Computer:</label>
+            <input type="checkbox"><br><br>
+            <input type="submit" value="Submit Form">
+        </fieldset>
+    </form>
+</body>
+
+</html>
