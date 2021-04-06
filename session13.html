@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Book</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: #0066ff;
+        }
+
+        .desc {
+            font-size: 24px;
+        }
+
+        body {
+            font-family: sans-serif;
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+
+        form {
+            width: 400px;
+            height: 350px;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: auto;
+            margin-top: 50px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, .2);
+        }
+
+        .email,
+        .password,
+        .login,
+        .cna {
+            width: 100%;
+            padding: 15px;
+            border-radius: 5px;
+            border: 1px solid rgba(0, 0, 0, .2)
+        }
+
+        .login,
+        .cna {
+            background-color: #0066ff;
+            color: white;
+            font-size: 18px;
+            font-weight: bolder;
+            border: none;
+        }
+
+        .cna {
+            width: 80%;
+            background-color: #00cc00;
+            margin-top: 20px;
+        }
+
+        .forget {
+            color: #0066ff;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .border {
+            border-top: 1px solid rgba(0, 0, 0, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Book</h1><br>
+        <p class="desc">My Book Helps You Contact Your Friends <br>And<br> Play Games Together!</p>
+    </header>
+    <form action="">
+        <input class="email" type="email" placeholder="Email address or phone number" required><br><br>
+        <input class="password" type="password" placeholder="Password" required><br><br>
+        <input class="login" type="submit" value="Log In"><br><br>
+        <a class="forget" href="">Forgotten Password?</a><br><br>
+        <div class="border">
+            <button class="cna" formaction="notexist.html">Create New Account</button>
+        </div>
+
+    </form>
+</body>
+
+</html>
