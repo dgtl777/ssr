@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 25</title>
+    <style>
+        body{
+            background-color: bisque;
+            text-align: center;
+        }
+        p{
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Web Storage</h1>
+    </header>
+    <p id="data"></p>
+    <h2>My Location is:</h2>
+    <p id="location"></p>
+    <button onclick="getLocation()">Get Location</button>
+    <h2>Test</h2>
+    <p id="myName"></p>
+    <button onclick='data("Sushovit")'>sushovit</button>
+    <button onclick='data("Rohan")'>Rohan</button>
+    <button onclick='data("Samuel")'>Samuel</button>
+    
+</body>
+<script>
+    function data(namee){
+        document.getElementById("myName").innerHTML = namee;
+    }
+    function getLocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition)
+        }
+        else{
+            document.getElementById("location").innerHTML = "Cannot get location";
+        }
+        function showPosition(position){
+            document.getElementById("location").innerHTML = 
+            "My latitude position: " +position.coords.latitude
+             + "My longitude position: "+position.coords.longitude;
+        }
+    }
+
+    localStorage.setItem("myName","Jay");
+    document.getElementById("data").innerHTML = localStorage.getItem("myName");
+    localStorage.removeItem("myName");
+    document.getElementById("data").innerHTML = localStorage.getItem("myName");
+
+    localStorage.day = "Sunday";
+    document.getElementById("data").innerHTML = localStorage.day;
+
+    sessionStorage.session = "Session26";
+    document.getElementById("data").innerHTML = sessionStorage.session;
+</script>
+</html>
