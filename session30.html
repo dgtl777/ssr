@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 30</title>
+    <style>
+        body{
+            background-color: palevioletred;
+            text-align: center;
+        }
+        h1{
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Javascript Datatypes</h1>
+    </header>
+    <h2 id="data"></h2>
+    <h2 id="myName"></h2>
+    <h2 id="num"></h2>
+    <h2 id="add"></h2>
+    <h2 id="sub"></h2>
+    <h2 id="gar"></h2>
+    <h2 id="happy"></h2>
+</body>
+<script>
+    
+    var data = "Rohan Sushovit and Samuel"; //String
+    var num = 5; //Number
+    var point = 3.14; //Floating Point Number
+    var add = num + point; //Addition
+    var sub = num - point; //Subtraction
+    var garbage = undefined;
+    var happy = true;
+    var mul  = 7*1;
+    document.getElementById("data").innerText = 
+    "7 X 1 ="+mul;
+    document.getElementById("myName").innerText = data;
+    document.getElementById("num").innerText = num;
+    document.getElementById("add").innerText = "The Addition is "+add;
+    document.getElementById("sub").innerText = sub;
+    document.getElementById("gar").innerText = garbage;
+
+    if(happy ==  true){
+    document.getElementById("happy").innerText = 
+    "Yes I am Happy";
+    }
+</script>
+</html>
