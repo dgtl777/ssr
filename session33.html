@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 33</title>
+    <style>
+        body {
+            background-color: skyblue;
+            text-align: center;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        #colorChange {
+            color: yellow;
+            animation-name: colorChange;
+            animation-duration: 4s;
+        }
+
+        @keyframes colorChange {
+            from {
+                color: blue;
+            }
+
+            to {
+                color: yellow;
+            }
+        }
+
+        #ball {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: red;
+            animation-name: movingBall;
+            animation-duration: 3s;
+        }
+
+        @keyframes movingBall {
+            from {
+                margin-left: 0;
+                background-color: red;
+                border-radius: 0;
+                transform: rotate(0deg);
+            }
+
+            to {
+                margin-left: 200px;
+                background-color: yellow;
+                border-radius: 50%;
+                transform: rotate(360deg);
+            }
+
+        }
+
+        #bounce {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: blue;
+            margin: auto;
+            animation-name: bounce;
+            animation-duration: 4s;
+            animation-direction: alternate;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes bounce {
+
+            from {
+                margin-top: 0px;
+            }
+
+            to {
+                margin-top: 200px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>CSS Animation</h1>
+    </header>
+
+    <h1 id="colorChange">Color Changing Text</h1>
+    <div id="ball"></div>
+
+    <div id="bounce"></div>
+</body>
+
+</html>
