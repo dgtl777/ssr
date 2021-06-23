@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 36</title>
+    <style>
+        body {
+            background-color: palevioletred;
+            text-align: center;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Multiplication Table</h1>
+    </header>
+    <input type="text" name="" id="num" placeholder="Enter Number">
+    <input type="text" name="" id="mul" placeholder="Enter Multiple">
+    <button onclick="multiple()">Get Multiple</button>
+    <h2>Result</h2>
+    <h2 id="result"></h2>
+    <h2 id="plus"></h2>
+
+</body>
+<script>
+    var plus = 1;
+    while (plus <= 5) {
+        var ans = plus + 1;
+        plus = plus + 1
+    }
+    document.getElementById("plus").innerText = ans;
+
+    function multiple() {
+        var num = document.getElementById("num").value;
+        var mul = document.getElementById("mul").value;
+        var count = 1;
+        while (count <= parseInt(mul)) {
+            var result = num * count;
+            var data = num + " X " + count + " = " + result;
+            var output = document.createElement("p");
+            output.innerText = data;
+            document.getElementById("result").appendChild(output);
+            count = count + 1;
+        }
+    }
+</script>
+
+</html>
