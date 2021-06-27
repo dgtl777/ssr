@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 37</title>
+    <style>
+        body{
+            background-color: skyblue;
+            text-align: center;
+        }
+        h1{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>HTML Templates</h1>
+    </header>
+    <h2>Who is the King of the jungle?</h2>
+    <label for="">Lion</label>
+    <input type="radio" name="king" id="" value="Lion">
+    <label for="">Tiger</label>
+    <input type="radio" name="king" id="" value="Tiger">
+    <h2>Which is the King of fruits?</h2>
+    <label for="">Mango</label>
+    <input type="radio" name="" id="">
+    <label for="">Pineapple</label>
+    <input type="radio" name="" id="">
+    <h2>Which is the fastest animal in the world?</h2>
+    <label for="">Leopard</label>
+    <input type="radio" name="" id="">
+    <label for="">Cheetah</label>
+    <input type="radio" name="" id="">
+    <h2>Which is the tallest building in the world?</h2>
+    <label for="">Burj Khalifa</label>
+    <input type="radio" name="" id="">
+    <label for="">Tokyo Tower</label>
+    <input type="radio" name="" id="">
+    <h2>Which is the queen of fruits?</h2>
+    <label for="">Litchi</label>
+    <input type="radio" name="" id="">
+    <label for="">Strawberry</label>
+    <input type="radio" name="" id=""><br><br>
+    <button onclick="result()">Submit Answer</button>
+    <template>
+        <h2 id="score"></h2>
+        <h2>Who is the King of the jungle?</h2>
+            <h3>Lion</h3>
+        <h2>Which is the King of fruits?</h2>
+            <h3>Mango</h3>
+        <h2>Which is the fastest animal in the world?</h2>
+            <h3>Cheetah</h3>
+        <h2>Which is the tallest building in the world?</h2>
+            <h3>Burj Khalifa</h3>
+        <h2>Which is the queen of fruits?</h2>
+            <h3>Litchi</h3>
+    </template>
+    
+</body>
+<script>
+    var score = 0;
+    function result(){
+    var king = document.
+    querySelectorAll("input[name='king']:checked")[0].value;
+    if(king == "Lion"){
+        score = score+1;
+    }
+    var data = document.getElementsByTagName("template")[0];
+    var show = data.content.cloneNode(true);
+    document.body.appendChild(show);
+    document.getElementById("score").innerText=score;
+    }
+</script>
+</html>
