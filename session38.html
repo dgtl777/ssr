@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Session 38</title>
+    <style>
+        body {
+            background-color: palevioletred;
+            text-align: center;
+        }
+
+        h1 {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Regex(Regular Expression)</h1>
+    </header>
+    <h2>My Name</h2>
+    <input type="text" name="" id="myName">
+    <button onclick="check()">Check</button>
+
+</body>
+<script>
+    function check() {
+        var myName = document.getElementById("myName").value;
+        var patt = /[@]/i;
+        if (myName.match(patt) != null) {
+            alert("Name Matched");
+        }
+        else {
+            alert("Email must contain @");
+        }
+    }
+</script>
+
+</html>
